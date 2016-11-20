@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+ <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- ����3��meta��ǩ*����*������ǰ�棬�κ��������ݶ�*����*������� -->
+    <title>Vanishing</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+   
+    <style>
+    .name{padding-top:80px;} 
+     .cloud{padding-top:60px;} 
+   
+#rectangle {
+bottom:0px;
+width: 100%;
+height: 34%;
+background:-moz-linear-gradient(top,#e1eeed,#c8ebed);/*火狐*/ 
+
+background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#e1eeed), to(#c8ebed));/*谷歌*/ 
+} 
+  #et span
+        {
+            position: relative;
+
+            width: 180px;
+            height: 180px;
+            display: block;
+            margin: auto;
+            top:450px;
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 90px solid white;
+
+            -webkit-transition: .5s;
+            -moz-transition: .5s;
+            -ms-transition: .5s;
+            transition: .5s;
+        }
+         #et span:hover 
+        {
+            -webkit-transform: scale(.6) rotate(90deg);
+            -moz-transform: scale(.6) rotate(90deg);
+            -ms-transform: scale(.6) rotate(90deg);
+            transform: scale(.6) rotate(90 deg);
+      
+   
+        }
+    #WebGL-output{margin-top:150px;} 
+        body {
+            /* set margin to 0 and overflow to hidden, to go fullscreen */
+            margin: 0;
+            overflow: hidden;
+            background-color:#15637a;
+        }
+    </style>
+</head>
+<body>
+
+<div  style="position:absolute" id="rectangle"></div>
+ </div> 
+ <div style="position:relative">
+
+ <div style="position:absolute" id="botom">
+   
+ <div style="position:absolute" id="WebGL-output">
+ </div> 
+ <div class="name">
+  <div class="item active">
+      <img src="image/name.png" class="img-responsive  center-block " alt="Responsive image">
+    
+      </div>
+  
+      </div>
+       <div class="cloud">
+       <img src="image/cloud.png" class="img-responsive  center-block " alt="Responsive image">
+      </div>
+</div>
+<div style="position:relative" id="et">
+  <a class="link-light" href="page1.html" title="book1">  <span id="et"></span> </a>
+    </div>
+<div id="Stats-output">
+</div>
+
+ <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/three.js"></script>
+    <script type="text/javascript" src="js/OBJLoader.js"></script>
+    <script type="text/javascript" src="js/stats.js"></script>
+    <script type="text/javascript" src="js/dat.gui.js"></script>
+    <script type="text/javascript" src="js/OrbitControls.js"></script>
+
+    <script type="text/javascript" src="js/idx.js"></script>
+   
+</body>
+</html>

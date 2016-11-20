@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+ <meta charset="utf-8">
+    <title>Example 08.06 - Load OBJ model </title>
+   <link href="css/bootstrap.css" rel="stylesheet">
+   <link href="css/vanishing.css" rel="stylesheet">
+    <style>
+    .hd{
+      display:none
+    }
+    .bjxlg{
+    background-image:url("image/mhl2.jpg");
+    background-color:#eee;
+    background-size:100% auto;
+    margin-top:-20px;
+    padding:0px 0 100%
+  }
+    .bjxsm{
+    background-image:url("image/mhl3.jpg");
+    background-color:#eee;
+    background-size:100% auto;
+    margin-top:-20px;
+    padding:0px 0 220%
+  }
+    #img1 {
+      margin-left:70%;
+       margin-top:35%;
+    }
+     #img2 {
+       margin-left:20%;
+       padding-top:450px;
+
+    }
+    #et{
+
+    padding-right: 12%;
+      float: right;
+    }
+    #et span
+        {
+            position: relative;
+    
+            width: 180px;
+            height: 180px;
+            display: block;
+            top:560px;
+            width: 0;
+            height:0;
+            border-top: 30px solid transparent;
+            border-left: 50px solid white;
+            border-bottom: 30px solid transparent;
+
+            -webkit-transition: .5s;
+            -moz-transition: .5s;
+            -ms-transition: .5s;
+            transition: .5s;
+        }
+         #et span:hover 
+        {
+            -webkit-transform: scale(.6) rotate(90deg);
+            -moz-transform: scale(.6) rotate(90deg);
+            -ms-transform: scale(.6) rotate(90deg);
+            transform: scale(.6) rotate(90 deg);
+      
+   
+        }
+          #et2  {
+      padding-left:12%;
+      float: left;
+    }
+         #et2 span
+        {
+            position: relative;
+        
+            width: 180px;
+            height: 180px;
+            display: block;
+            top:560px;
+            width: 0;
+            height:0;
+            border-top: 30px solid transparent;
+            border-right: 50px solid white;
+            border-bottom: 30px solid transparent;
+
+            -webkit-transition: .5s;
+            -moz-transition: .5s;
+            -ms-transition: .5s;
+            transition: .5s;
+        }
+         #et2 span:hover 
+        {
+            -webkit-transform: scale(.6) rotate(90deg);
+            -moz-transform: scale(.6) rotate(90deg);
+            -ms-transform: scale(.6) rotate(90deg);
+            transform: scale(.6) rotate(90 deg);
+      
+   
+        }
+        body {
+            /* set margin to 0 and overflow to hidden, to go fullscreen */
+            margin: 0;  
+            overflow: hidden;
+            background:#e0dabb;
+        }
+    </style>
+</head>
+<body>
+
+<div id="Stats-output">
+
+</div>
+<div id="Lu" class="stuff" style="position:absolute" >
+</div>
+<div class="next2 stuff2 hidden-xs" style="position:absolute" > 
+  <img src="image/mhl1.png" id="img1" alt="Responsive image">
+
+</div>
+<div class="next2 stuff2 hidden-md hidden-lg  hidden-sm" style="position:absolute">
+ <img src="image/mhl1.png" id="img2" alt="Responsive image">
+</div>
+ <div class="stuff2" style="position:relative " id="et">
+  <a class="1">  <span id="et"></span> </a>
+   </div>
+   </div>
+<div class="hd">
+  <div class="bjxlg hidden-xs ">
+    <div class="stuff3" style="position:relative " id="et2">
+  <a class="2">  <span id="et2"></span> </a>
+   </div>
+  <div class="stuff3" style="position:relative " id="et">
+  <a href="page2.html">  <span id="et"></span> </a>
+   </div>
+ <div style="padding-top:16%">
+</div>
+<div  class="col-sm-2 "></div>
+<div class="panel2 panel-default col-sm-8 ">
+  <div class="panel2-body">
+  梅花鹿毛色随季节的改变而改变，夏季体毛为棕黄色或栗红色，遍布鲜明的白色状似梅花的斑点，故称“梅花鹿”。
+  <br>
+他们生活于森林边缘或山地草原地区。由于可入药可食用而被过度捕猎，以及栖息地遭到破坏，高度濒危。野生梅花鹿数量曾少于1000只，华北亚种和山西亚种已经灭绝。
+  </div>
+  </div>
+
+</div>
+
+   <div class="bjxsm hidden-sm hidden-md hidden-lg">
+    <div class="stuff3" style="position:relative " id="et2">
+  <a class="2">  <span id="et2"></span> </a>
+   </div>
+  <div class="stuff3" style="position:relative " id="et">
+  <a href="page2.html">  <span id="et"></span> </a>
+   </div>
+    <div style="padding-top:40%">
+    </div>
+    <div  class="col-xs-1 "></div>
+    <div class="panel2 panel-default col-xs-10 ">
+    <div class="panel2-body" style="font-size: 14px">
+    梅花鹿毛色随季节的改变而改变，夏季体毛为棕黄色或栗红色，遍布鲜明的白色状似梅花的斑点，故称“梅花鹿”。
+  <br>
+他们生活于森林边缘或山地草原地区。由于可入药可食用而被过度捕猎，以及栖息地遭到破坏，高度濒危。野生梅花鹿数量曾少于1000只，华北亚种和山西亚种已经灭绝。
+    </div>
+
+  </div>
+</div>
+</div>
+<nav class="meta">
+      <a class="demo-link" href="index.html"><span>Home</span></a>
+      <a class="demo-link" href="page1.html">Page1</a>
+      <a class="demo-link" href="page2.html">Page2</a>
+    </nav>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.3.2.js"></script> 
+    <script type="text/javascript" src="js/three.js"></script>
+    <script type="text/javascript" src="js/OBJLoader.js"></script>
+    <script type="text/javascript" src="js/stats.js"></script>
+    <script type="text/javascript" src="js/dat.gui.js"></script>
+    <script type="text/javascript" src="js/OrbitControls.js"></script>
+    <script type="text/javascript" src="js/TrackballControls.js"></script>
+    <script type="text/javascript" src="js/p2.js"></script>
+
+  <script type="text/javascript"> 
+ $(document).ready(function(){
+     $("a.1").toggle(function(){
+      $(".stuff").animate({  opacity: 'hide' }, 'slow');
+       $(".stuff2").animate({ opacity: 'hide' }, 'slow');
+      $(".hd").animate({opacity: 'show' }, 'slow');
+   },function(){;
+   });
+});
+ $(document).ready(function(){
+     $("a.2").toggle(function(){
+      $(".stuff").animate({ height: 'show', opacity: 'show' }, 'slow');
+       $(".stuff2").animate({ opacity: 'show' }, 'slow');
+      $(".hd").animate({width: 'hide',opacity: 'hide' }, 'fast');
+   },function(){;
+   });
+});
+</script> 
+</body>
+</html>
